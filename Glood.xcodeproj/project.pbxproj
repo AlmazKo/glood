@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E72265F73700F9D775 /* AppDelegate.swift */; };
+		C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E92265F73700F9D775 /* ViewController.swift */; };
+		C0F379ED2265F73700F9D775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F379EB2265F73700F9D775 /* Main.storyboard */; };
+		C0F379EF2265F73800F9D775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F379EE2265F73800F9D775 /* Assets.xcassets */; };
+		C0F379F22265F73800F9D775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F379F02265F73800F9D775 /* LaunchScreen.storyboard */; };
+		C0F379F72265F73800F9D775 /* Glood WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C0F379F62265F73800F9D775 /* Glood WatchKit App.app */; };
+		C0F379FD2265F73800F9D775 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F379FB2265F73800F9D775 /* Interface.storyboard */; };
+		C0F379FF2265F73800F9D775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F379FE2265F73800F9D775 /* Assets.xcassets */; };
+		C0F37A062265F73800F9D775 /* Glood WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0F37A052265F73800F9D775 /* Glood WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0F37A0B2265F73800F9D775 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A0A2265F73800F9D775 /* InterfaceController.swift */; };
+		C0F37A0D2265F73800F9D775 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A0C2265F73800F9D775 /* ExtensionDelegate.swift */; };
+		C0F37A0F2265F73800F9D775 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A0E2265F73800F9D775 /* NotificationController.swift */; };
+		C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A102265F73800F9D775 /* ComplicationController.swift */; };
+		C0F37A132265F73800F9D775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F37A122265F73800F9D775 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0F379F82265F73800F9D775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F379DC2265F73700F9D775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F379F52265F73800F9D775;
+			remoteInfo = "Glood WatchKit App";
+		};
+		C0F37A072265F73800F9D775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F379DC2265F73700F9D775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F37A042265F73800F9D775;
+			remoteInfo = "Glood WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0F37A1B2265F73800F9D775 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0F37A062265F73800F9D775 /* Glood WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F37A1F2265F73800F9D775 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C0F379F72265F73800F9D775 /* Glood WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C0F379E42265F73700F9D775 /* Glood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F379E72265F73700F9D775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0F379E92265F73700F9D775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0F379EC2265F73700F9D775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0F379EE2265F73800F9D775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F379F12265F73800F9D775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0F379F32265F73800F9D775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F379F62265F73800F9D775 /* Glood WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glood WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F379FC2265F73800F9D775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C0F379FE2265F73800F9D775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F37A002265F73800F9D775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F37A052265F73800F9D775 /* Glood WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Glood WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F37A0A2265F73800F9D775 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C0F37A0C2265F73800F9D775 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C0F37A0E2265F73800F9D775 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C0F37A102265F73800F9D775 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C0F37A122265F73800F9D775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0F37A142265F73800F9D775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F37A152265F73800F9D775 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F379E12265F73700F9D775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F37A022265F73800F9D775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0F379DB2265F73700F9D775 = {
+			isa = PBXGroup;
+			children = (
+				C0F379E62265F73700F9D775 /* Glood */,
+				C0F379FA2265F73800F9D775 /* Glood WatchKit App */,
+				C0F37A092265F73800F9D775 /* Glood WatchKit Extension */,
+				C0F379E52265F73700F9D775 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F379E52265F73700F9D775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F379E42265F73700F9D775 /* Glood.app */,
+				C0F379F62265F73800F9D775 /* Glood WatchKit App.app */,
+				C0F37A052265F73800F9D775 /* Glood WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F379E62265F73700F9D775 /* Glood */ = {
+			isa = PBXGroup;
+			children = (
+				C0F379E72265F73700F9D775 /* AppDelegate.swift */,
+				C0F379E92265F73700F9D775 /* ViewController.swift */,
+				C0F379EB2265F73700F9D775 /* Main.storyboard */,
+				C0F379EE2265F73800F9D775 /* Assets.xcassets */,
+				C0F379F02265F73800F9D775 /* LaunchScreen.storyboard */,
+				C0F379F32265F73800F9D775 /* Info.plist */,
+			);
+			path = Glood;
+			sourceTree = "<group>";
+		};
+		C0F379FA2265F73800F9D775 /* Glood WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C0F379FB2265F73800F9D775 /* Interface.storyboard */,
+				C0F379FE2265F73800F9D775 /* Assets.xcassets */,
+				C0F37A002265F73800F9D775 /* Info.plist */,
+			);
+			path = "Glood WatchKit App";
+			sourceTree = "<group>";
+		};
+		C0F37A092265F73800F9D775 /* Glood WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0F37A0A2265F73800F9D775 /* InterfaceController.swift */,
+				C0F37A0C2265F73800F9D775 /* ExtensionDelegate.swift */,
+				C0F37A0E2265F73800F9D775 /* NotificationController.swift */,
+				C0F37A102265F73800F9D775 /* ComplicationController.swift */,
+				C0F37A122265F73800F9D775 /* Assets.xcassets */,
+				C0F37A142265F73800F9D775 /* Info.plist */,
+				C0F37A152265F73800F9D775 /* PushNotificationPayload.apns */,
+			);
+			path = "Glood WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F379E32265F73700F9D775 /* Glood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F37A202265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood" */;
+			buildPhases = (
+				C0F379E02265F73700F9D775 /* Sources */,
+				C0F379E12265F73700F9D775 /* Frameworks */,
+				C0F379E22265F73700F9D775 /* Resources */,
+				C0F37A1F2265F73800F9D775 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F379F92265F73800F9D775 /* PBXTargetDependency */,
+			);
+			name = Glood;
+			productName = Glood;
+			productReference = C0F379E42265F73700F9D775 /* Glood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0F379F52265F73800F9D775 /* Glood WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F37A1C2265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood WatchKit App" */;
+			buildPhases = (
+				C0F379F42265F73800F9D775 /* Resources */,
+				C0F37A1B2265F73800F9D775 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F37A082265F73800F9D775 /* PBXTargetDependency */,
+			);
+			name = "Glood WatchKit App";
+			productName = "Glood WatchKit App";
+			productReference = C0F379F62265F73800F9D775 /* Glood WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C0F37A042265F73800F9D775 /* Glood WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F37A182265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood WatchKit Extension" */;
+			buildPhases = (
+				C0F37A012265F73800F9D775 /* Sources */,
+				C0F37A022265F73800F9D775 /* Frameworks */,
+				C0F37A032265F73800F9D775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glood WatchKit Extension";
+			productName = "Glood WatchKit Extension";
+			productReference = C0F37A052265F73800F9D775 /* Glood WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F379DC2265F73700F9D775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Alexander;
+				TargetAttributes = {
+					C0F379E32265F73700F9D775 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					C0F379F52265F73800F9D775 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					C0F37A042265F73800F9D775 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = C0F379DF2265F73700F9D775 /* Build configuration list for PBXProject "Glood" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0F379DB2265F73700F9D775;
+			productRefGroup = C0F379E52265F73700F9D775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F379E32265F73700F9D775 /* Glood */,
+				C0F379F52265F73800F9D775 /* Glood WatchKit App */,
+				C0F37A042265F73800F9D775 /* Glood WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F379E22265F73700F9D775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F379F22265F73800F9D775 /* LaunchScreen.storyboard in Resources */,
+				C0F379EF2265F73800F9D775 /* Assets.xcassets in Resources */,
+				C0F379ED2265F73700F9D775 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F379F42265F73800F9D775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F379FF2265F73800F9D775 /* Assets.xcassets in Resources */,
+				C0F379FD2265F73800F9D775 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F37A032265F73800F9D775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F37A132265F73800F9D775 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F379E02265F73700F9D775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */,
+				C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F37A012265F73800F9D775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F37A0F2265F73800F9D775 /* NotificationController.swift in Sources */,
+				C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */,
+				C0F37A0D2265F73800F9D775 /* ExtensionDelegate.swift in Sources */,
+				C0F37A0B2265F73800F9D775 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0F379F92265F73800F9D775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F379F52265F73800F9D775 /* Glood WatchKit App */;
+			targetProxy = C0F379F82265F73800F9D775 /* PBXContainerItemProxy */;
+		};
+		C0F37A082265F73800F9D775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F37A042265F73800F9D775 /* Glood WatchKit Extension */;
+			targetProxy = C0F37A072265F73800F9D775 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0F379EB2265F73700F9D775 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F379EC2265F73700F9D775 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0F379F02265F73800F9D775 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F379F12265F73800F9D775 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C0F379FB2265F73800F9D775 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F379FC2265F73800F9D775 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0F37A162265F73800F9D775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0F37A172265F73800F9D775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F37A192265F73800F9D775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H63T4QQAY9;
+				INFOPLIST_FILE = "Glood WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazko.Glood.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		C0F37A1A2265F73800F9D775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H63T4QQAY9;
+				INFOPLIST_FILE = "Glood WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazko.Glood.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		C0F37A1D2265F73800F9D775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H63T4QQAY9;
+				IBSC_MODULE = Glood_WatchKit_Extension;
+				INFOPLIST_FILE = "Glood WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazko.Glood.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		C0F37A1E2265F73800F9D775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H63T4QQAY9;
+				IBSC_MODULE = Glood_WatchKit_Extension;
+				INFOPLIST_FILE = "Glood WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazko.Glood.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		C0F37A212265F73800F9D775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H63T4QQAY9;
+				INFOPLIST_FILE = Glood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazko.Glood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0F37A222265F73800F9D775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H63T4QQAY9;
+				INFOPLIST_FILE = Glood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazko.Glood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F379DF2265F73700F9D775 /* Build configuration list for PBXProject "Glood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F37A162265F73800F9D775 /* Debug */,
+				C0F37A172265F73800F9D775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F37A182265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F37A192265F73800F9D775 /* Debug */,
+				C0F37A1A2265F73800F9D775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F37A1C2265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F37A1D2265F73800F9D775 /* Debug */,
+				C0F37A1E2265F73800F9D775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F37A202265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F37A212265F73800F9D775 /* Debug */,
+				C0F37A222265F73800F9D775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0F379DC2265F73700F9D775 /* Project object */;
+}
