@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller animationDuration="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Glood_WatchKit_App" customModuleProvider="target" colorLabel="IBBuiltInLabel-Green">
+                    <items>
+                        <table alignment="left" id="fRh-Cn-Lq6">
+                            <items>
+                                <tableRow identifier="Row" id="ySS-jX-w7W" customClass="Row" customModule="Glood_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="scaleAspectFill" id="imC-P7-w8w">
+                                        <items>
+                                            <label width="16" height="28" alignment="left" verticalAlignment="center" text="↗" textAlignment="center" id="Nf0-QZ-mwf"/>
+                                            <label width="32" height="28" alignment="left" verticalAlignment="center" text="15.3" textAlignment="right" id="EWt-9a-ehz">
+                                                <fontDescription key="font" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                            </label>
+                                            <label width="65" height="26" alignment="right" verticalAlignment="center" text="12:12 Apr 14" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.5" id="YF8-eZ-5zh">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="direction" destination="Nf0-QZ-mwf" id="yjh-3v-tIZ"/>
+                                        <outlet property="row" destination="imC-P7-w8w" id="gah-ZH-wpc"/>
+                                        <outlet property="time" destination="YF8-eZ-5zh" id="GVH-ae-634"/>
+                                        <outlet property="value" destination="EWt-9a-ehz" id="ztx-I3-UbU"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label width="136" alignment="center" verticalAlignment="center" text="..." textAlignment="center" id="6rL-oK-RMR"/>
+                    </items>
+                    <connections>
+                        <outlet property="errorLbl" destination="6rL-oK-RMR" id="Axa-m4-1u8"/>
+                        <outlet property="tbl" destination="fRh-Cn-Lq6" id="XcR-2G-h3Q"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="347"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,16 +72,17 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Glood_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Glood_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.75969478629999998" green="0.0091824853150000007" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

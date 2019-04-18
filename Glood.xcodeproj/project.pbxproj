@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBFDBC630BB782239959E3CD /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDB032D9F68F83FB0C6F29 /* Row.swift */; };
 		C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E72265F73700F9D775 /* AppDelegate.swift */; };
 		C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E92265F73700F9D775 /* ViewController.swift */; };
 		C0F379ED2265F73700F9D775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F379EB2265F73700F9D775 /* Main.storyboard */; };
@@ -21,6 +22,9 @@
 		C0F37A0F2265F73800F9D775 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A0E2265F73800F9D775 /* NotificationController.swift */; };
 		C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A102265F73800F9D775 /* ComplicationController.swift */; };
 		C0F37A132265F73800F9D775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F37A122265F73800F9D775 /* Assets.xcassets */; };
+		EDBD44422266836B009BECC7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBD44412266836B009BECC7 /* logo.png */; };
+		EDC61DAB22666C370069772E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC61DAA22666C370069772E /* logo.png */; };
+		EDDC1C6E22692D4E00E08AEA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BBFDB032D9F68F83FB0C6F29 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		C0F379E42265F73700F9D775 /* Glood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F379E72265F73700F9D775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F379E92265F73700F9D775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +90,9 @@
 		C0F37A122265F73800F9D775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F37A142265F73800F9D775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0F37A152265F73800F9D775 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EDBD44412266836B009BECC7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EDC61DAA22666C370069772E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +149,11 @@
 		C0F379FA2265F73800F9D775 /* Glood WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */,
 				C0F379FB2265F73800F9D775 /* Interface.storyboard */,
 				C0F379FE2265F73800F9D775 /* Assets.xcassets */,
 				C0F37A002265F73800F9D775 /* Info.plist */,
+				EDC61DAA22666C370069772E /* logo.png */,
 			);
 			path = "Glood WatchKit App";
 			sourceTree = "<group>";
@@ -157,7 +167,9 @@
 				C0F37A102265F73800F9D775 /* ComplicationController.swift */,
 				C0F37A122265F73800F9D775 /* Assets.xcassets */,
 				C0F37A142265F73800F9D775 /* Info.plist */,
+				EDBD44412266836B009BECC7 /* logo.png */,
 				C0F37A152265F73800F9D775 /* PushNotificationPayload.apns */,
+				BBFDB032D9F68F83FB0C6F29 /* Row.swift */,
 			);
 			path = "Glood WatchKit Extension";
 			sourceTree = "<group>";
@@ -240,7 +252,7 @@
 				};
 			};
 			buildConfigurationList = C0F379DF2265F73700F9D775 /* Build configuration list for PBXProject "Glood" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -276,6 +288,8 @@
 			files = (
 				C0F379FF2265F73800F9D775 /* Assets.xcassets in Resources */,
 				C0F379FD2265F73800F9D775 /* Interface.storyboard in Resources */,
+				EDDC1C6E22692D4E00E08AEA /* Roboto-Regular.ttf in Resources */,
+				EDC61DAB22666C370069772E /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBD44422266836B009BECC7 /* logo.png in Resources */,
 				C0F37A132265F73800F9D775 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +322,7 @@
 				C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */,
 				C0F37A0D2265F73800F9D775 /* ExtensionDelegate.swift in Sources */,
 				C0F37A0B2265F73800F9D775 /* InterfaceController.swift in Sources */,
+				BBFDBC630BB782239959E3CD /* Row.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
