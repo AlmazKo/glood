@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BBFDBC630BB782239959E3CD /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDB032D9F68F83FB0C6F29 /* Row.swift */; };
+		BBFDBDE84DF3DBD4A5E06B68 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BBFDB2BE6D5484CC3AF04AB2 /* .gitignore */; };
 		C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E72265F73700F9D775 /* AppDelegate.swift */; };
 		C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E92265F73700F9D775 /* ViewController.swift */; };
 		C0F379ED2265F73700F9D775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F379EB2265F73700F9D775 /* Main.storyboard */; };
@@ -25,6 +26,9 @@
 		EDBD44422266836B009BECC7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBD44412266836B009BECC7 /* logo.png */; };
 		EDC61DAB22666C370069772E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC61DAA22666C370069772E /* logo.png */; };
 		EDDC1C6E22692D4E00E08AEA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */; };
+		EDDC1C71226A6AB600E08AEA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDC1C70226A6AB600E08AEA /* HealthKit.framework */; };
+		EDDC1C74226E70E100E08AEA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDC1C73226E70E100E08AEA /* Api.swift */; };
+		EDDC1C75226E70E100E08AEA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDC1C73226E70E100E08AEA /* Api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		BBFDB032D9F68F83FB0C6F29 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		BBFDB2BE6D5484CC3AF04AB2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		C0F379E42265F73700F9D775 /* Glood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F379E72265F73700F9D775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F379E92265F73700F9D775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +98,9 @@
 		EDBD44412266836B009BECC7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		EDC61DAA22666C370069772E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		EDDC1C70226A6AB600E08AEA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		EDDC1C72226A6AB600E08AEA /* Glood.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Glood.entitlements; sourceTree = "<group>"; };
+		EDDC1C73226E70E100E08AEA /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDC1C71226A6AB600E08AEA /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +129,8 @@
 				C0F379FA2265F73800F9D775 /* Glood WatchKit App */,
 				C0F37A092265F73800F9D775 /* Glood WatchKit Extension */,
 				C0F379E52265F73700F9D775 /* Products */,
+				EDDC1C6F226A6AB600E08AEA /* Frameworks */,
+				BBFDB2BE6D5484CC3AF04AB2 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +147,8 @@
 		C0F379E62265F73700F9D775 /* Glood */ = {
 			isa = PBXGroup;
 			children = (
+				ED896DC6226FAD5D0089CE0C /* Nightscout */,
+				EDDC1C72226A6AB600E08AEA /* Glood.entitlements */,
 				C0F379E72265F73700F9D775 /* AppDelegate.swift */,
 				C0F379E92265F73700F9D775 /* ViewController.swift */,
 				C0F379EB2265F73700F9D775 /* Main.storyboard */,
@@ -172,6 +185,22 @@
 				BBFDB032D9F68F83FB0C6F29 /* Row.swift */,
 			);
 			path = "Glood WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		ED896DC6226FAD5D0089CE0C /* Nightscout */ = {
+			isa = PBXGroup;
+			children = (
+				EDDC1C73226E70E100E08AEA /* Api.swift */,
+			);
+			path = Nightscout;
+			sourceTree = "<group>";
+		};
+		EDDC1C6F226A6AB600E08AEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDDC1C70226A6AB600E08AEA /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +271,11 @@
 				TargetAttributes = {
 					C0F379E32265F73700F9D775 = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					C0F379F52265F73800F9D775 = {
 						CreatedOnToolsVersion = 10.2;
@@ -279,6 +313,7 @@
 				C0F379F22265F73800F9D775 /* LaunchScreen.storyboard in Resources */,
 				C0F379EF2265F73800F9D775 /* Assets.xcassets in Resources */,
 				C0F379ED2265F73700F9D775 /* Main.storyboard in Resources */,
+				BBFDBDE84DF3DBD4A5E06B68 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +346,7 @@
 			files = (
 				C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */,
 				C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */,
+				EDDC1C74226E70E100E08AEA /* Api.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +357,7 @@
 				C0F37A0F2265F73800F9D775 /* NotificationController.swift in Sources */,
 				C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */,
 				C0F37A0D2265F73800F9D775 /* ExtensionDelegate.swift in Sources */,
+				EDDC1C75226E70E100E08AEA /* Api.swift in Sources */,
 				C0F37A0B2265F73800F9D775 /* InterfaceController.swift in Sources */,
 				BBFDBC630BB782239959E3CD /* Row.swift in Sources */,
 			);
@@ -571,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glood/Glood.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H63T4QQAY9;
 				INFOPLIST_FILE = Glood/Info.plist;
@@ -589,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glood/Glood.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H63T4QQAY9;
 				INFOPLIST_FILE = Glood/Info.plist;

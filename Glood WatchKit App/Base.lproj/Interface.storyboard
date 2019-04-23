@@ -15,33 +15,60 @@
     </customFonts>
     <scenes>
         <!--Interface Controller-->
+        <scene sceneID="MnU-s5-VL6">
+            <objects>
+                <controller id="Z2X-Yv-t0d">
+                    <items>
+                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="hJ4-td-2o1">
+                            <items>
+                                <button width="58" alignment="left" title="💉" id="B3E-ES-aNz">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                </button>
+                                <button width="52" height="1" alignment="left" verticalAlignment="center" title="🍌" id="1TT-f3-NmS">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="58" alignment="left" title="📈" id="Ond-ml-Mb7">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="209" y="345"/>
+        </scene>
+        <!--History-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller animationDuration="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Glood_WatchKit_App" customModuleProvider="target" colorLabel="IBBuiltInLabel-Green">
+                <controller identifier="History" title="History" animationDuration="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Glood_WatchKit_App" customModuleProvider="target" colorLabel="IBBuiltInLabel-Green">
                     <items>
-                        <table alignment="left" id="fRh-Cn-Lq6">
+                        <group width="1" alignment="left" layout="vertical" id="hhB-Vw-VIz">
                             <items>
-                                <tableRow identifier="Row" id="ySS-jX-w7W" customClass="Row" customModule="Glood_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="scaleAspectFill" id="imC-P7-w8w">
-                                        <items>
-                                            <label width="16" height="28" alignment="left" verticalAlignment="center" text="↗" textAlignment="center" id="Nf0-QZ-mwf"/>
-                                            <label width="32" height="28" alignment="left" verticalAlignment="center" text="15.3" textAlignment="right" id="EWt-9a-ehz">
-                                                <fontDescription key="font" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                            </label>
-                                            <label width="65" height="26" alignment="right" verticalAlignment="center" text="12:12 Apr 14" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.5" id="YF8-eZ-5zh">
-                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
-                                            </label>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <outlet property="direction" destination="Nf0-QZ-mwf" id="yjh-3v-tIZ"/>
-                                        <outlet property="row" destination="imC-P7-w8w" id="gah-ZH-wpc"/>
-                                        <outlet property="time" destination="YF8-eZ-5zh" id="GVH-ae-634"/>
-                                        <outlet property="value" destination="EWt-9a-ehz" id="ztx-I3-UbU"/>
-                                    </connections>
-                                </tableRow>
+                                <table alignment="left" id="fRh-Cn-Lq6">
+                                    <items>
+                                        <tableRow identifier="Row" id="ySS-jX-w7W" customClass="Row" customModule="Glood_WatchKit_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="scaleAspectFill" id="imC-P7-w8w">
+                                                <items>
+                                                    <label width="16" height="28" alignment="left" verticalAlignment="center" text="↗" textAlignment="center" id="Nf0-QZ-mwf"/>
+                                                    <label width="32" height="28" alignment="left" verticalAlignment="center" text="15.3" textAlignment="right" id="EWt-9a-ehz">
+                                                        <fontDescription key="font" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                                    </label>
+                                                    <label width="65" height="26" alignment="right" verticalAlignment="center" text="12:12 Apr 14" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.5" id="YF8-eZ-5zh">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="direction" destination="Nf0-QZ-mwf" id="yjh-3v-tIZ"/>
+                                                <outlet property="row" destination="imC-P7-w8w" id="gah-ZH-wpc"/>
+                                                <outlet property="time" destination="YF8-eZ-5zh" id="GVH-ae-634"/>
+                                                <outlet property="value" destination="EWt-9a-ehz" id="ztx-I3-UbU"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
                             </items>
-                        </table>
+                        </group>
                         <label width="136" alignment="center" verticalAlignment="center" text="..." textAlignment="center" id="6rL-oK-RMR"/>
                     </items>
                     <connections>
@@ -50,7 +77,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="347"/>
+            <point key="canvasLocation" x="-108" y="375"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
