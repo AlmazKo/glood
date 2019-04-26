@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		978B215D4EBE84A9AB579D58 /* Pods_Glood_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE448244C6E1CECE22BC8ED /* Pods_Glood_WatchKit_Extension.framework */; };
 		BBFDBC630BB782239959E3CD /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDB032D9F68F83FB0C6F29 /* Row.swift */; };
 		BBFDBDE84DF3DBD4A5E06B68 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BBFDB2BE6D5484CC3AF04AB2 /* .gitignore */; };
+		C013302F2273456300E07150 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013302E2273456300E07150 /* Api.swift */; };
 		C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E72265F73700F9D775 /* AppDelegate.swift */; };
 		C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F379E92265F73700F9D775 /* ViewController.swift */; };
 		C0F379ED2265F73700F9D775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F379EB2265F73700F9D775 /* Main.storyboard */; };
@@ -27,8 +29,7 @@
 		EDC61DAB22666C370069772E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC61DAA22666C370069772E /* logo.png */; };
 		EDDC1C6E22692D4E00E08AEA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */; };
 		EDDC1C71226A6AB600E08AEA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDC1C70226A6AB600E08AEA /* HealthKit.framework */; };
-		EDDC1C74226E70E100E08AEA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDC1C73226E70E100E08AEA /* Api.swift */; };
-		EDDC1C75226E70E100E08AEA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDC1C73226E70E100E08AEA /* Api.swift */; };
+		FA3803AD7F3626744ABEE716 /* Pods_Glood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F8441BC670CB1624DA884F /* Pods_Glood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +75,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23B50466254F89C2F69D3894 /* Pods-Glood WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glood WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Glood WatchKit Extension/Pods-Glood WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE448244C6E1CECE22BC8ED /* Pods_Glood_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glood_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBE6EE0ACCF3C5A940B64E4 /* Pods-Glood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glood.release.xcconfig"; path = "Target Support Files/Pods-Glood/Pods-Glood.release.xcconfig"; sourceTree = "<group>"; };
+		5FB3C6CFD4067CE64A7754CF /* Pods-Glood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glood.debug.xcconfig"; path = "Target Support Files/Pods-Glood/Pods-Glood.debug.xcconfig"; sourceTree = "<group>"; };
+		B1F8441BC670CB1624DA884F /* Pods_Glood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41E55E69A14037B64AFFBDD /* Pods-Glood WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glood WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Glood WatchKit Extension/Pods-Glood WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		BBFDB032D9F68F83FB0C6F29 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		BBFDB2BE6D5484CC3AF04AB2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		C013302E2273456300E07150 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		C0F379E42265F73700F9D775 /* Glood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F379E72265F73700F9D775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F379E92265F73700F9D775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +108,6 @@
 		EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		EDDC1C70226A6AB600E08AEA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EDDC1C72226A6AB600E08AEA /* Glood.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Glood.entitlements; sourceTree = "<group>"; };
-		EDDC1C73226E70E100E08AEA /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +116,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDDC1C71226A6AB600E08AEA /* HealthKit.framework in Frameworks */,
+				FA3803AD7F3626744ABEE716 /* Pods_Glood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C0F37A022265F73800F9D775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978B215D4EBE84A9AB579D58 /* Pods_Glood_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46628E633D1C575D4641BF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C013302D2273454500E07150 /* Nightscout */ = {
+			isa = PBXGroup;
+			children = (
+				C013302E2273456300E07150 /* Api.swift */,
+			);
+			path = Nightscout;
+			sourceTree = "<group>";
+		};
 		C0F379DB2265F73700F9D775 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +155,7 @@
 				C0F379E52265F73700F9D775 /* Products */,
 				EDDC1C6F226A6AB600E08AEA /* Frameworks */,
 				BBFDB2BE6D5484CC3AF04AB2 /* .gitignore */,
+				D2E6FDE8E00E35A689A44CB4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +172,6 @@
 		C0F379E62265F73700F9D775 /* Glood */ = {
 			isa = PBXGroup;
 			children = (
-				ED896DC6226FAD5D0089CE0C /* Nightscout */,
 				EDDC1C72226A6AB600E08AEA /* Glood.entitlements */,
 				C0F379E72265F73700F9D775 /* AppDelegate.swift */,
 				C0F379E92265F73700F9D775 /* ViewController.swift */,
@@ -174,6 +198,7 @@
 		C0F37A092265F73800F9D775 /* Glood WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C013302D2273454500E07150 /* Nightscout */,
 				C0F37A0A2265F73800F9D775 /* InterfaceController.swift */,
 				C0F37A0C2265F73800F9D775 /* ExtensionDelegate.swift */,
 				C0F37A0E2265F73800F9D775 /* NotificationController.swift */,
@@ -187,18 +212,23 @@
 			path = "Glood WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		ED896DC6226FAD5D0089CE0C /* Nightscout */ = {
+		D2E6FDE8E00E35A689A44CB4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EDDC1C73226E70E100E08AEA /* Api.swift */,
+				5FB3C6CFD4067CE64A7754CF /* Pods-Glood.debug.xcconfig */,
+				5DBE6EE0ACCF3C5A940B64E4 /* Pods-Glood.release.xcconfig */,
+				23B50466254F89C2F69D3894 /* Pods-Glood WatchKit Extension.debug.xcconfig */,
+				B41E55E69A14037B64AFFBDD /* Pods-Glood WatchKit Extension.release.xcconfig */,
 			);
-			path = Nightscout;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		EDDC1C6F226A6AB600E08AEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				EDDC1C70226A6AB600E08AEA /* HealthKit.framework */,
+				B1F8441BC670CB1624DA884F /* Pods_Glood.framework */,
+				4FE448244C6E1CECE22BC8ED /* Pods_Glood_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,10 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F37A202265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood" */;
 			buildPhases = (
+				33B7DA760AEAB1E63AA53801 /* [CP] Check Pods Manifest.lock */,
 				C0F379E02265F73700F9D775 /* Sources */,
 				C0F379E12265F73700F9D775 /* Frameworks */,
 				C0F379E22265F73700F9D775 /* Resources */,
 				C0F37A1F2265F73800F9D775 /* Embed Watch Content */,
+				5463A0A7C58A7C8812B65BE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +263,7 @@
 			buildPhases = (
 				C0F379F42265F73800F9D775 /* Resources */,
 				C0F37A1B2265F73800F9D775 /* Embed App Extensions */,
+				D46628E633D1C575D4641BF2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F37A182265F73800F9D775 /* Build configuration list for PBXNativeTarget "Glood WatchKit Extension" */;
 			buildPhases = (
+				7203F3B5F4909ABAC96EE6EB /* [CP] Check Pods Manifest.lock */,
 				C0F37A012265F73800F9D775 /* Sources */,
 				C0F37A022265F73800F9D775 /* Frameworks */,
 				C0F37A032265F73800F9D775 /* Resources */,
+				7E31D2EF940CED3CE4D52689 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +374,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33B7DA760AEAB1E63AA53801 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Glood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5463A0A7C58A7C8812B65BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Glood/Pods-Glood-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Glood/Pods-Glood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7203F3B5F4909ABAC96EE6EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Glood WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E31D2EF940CED3CE4D52689 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Glood WatchKit Extension/Pods-Glood WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Glood WatchKit Extension/Pods-Glood WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0F379E02265F73700F9D775 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -346,7 +472,6 @@
 			files = (
 				C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */,
 				C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */,
-				EDDC1C74226E70E100E08AEA /* Api.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +480,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F37A0F2265F73800F9D775 /* NotificationController.swift in Sources */,
+				C013302F2273456300E07150 /* Api.swift in Sources */,
 				C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */,
 				C0F37A0D2265F73800F9D775 /* ExtensionDelegate.swift in Sources */,
-				EDDC1C75226E70E100E08AEA /* Api.swift in Sources */,
 				C0F37A0B2265F73800F9D775 /* InterfaceController.swift in Sources */,
 				BBFDBC630BB782239959E3CD /* Row.swift in Sources */,
 			);
@@ -524,6 +649,7 @@
 		};
 		C0F37A192265F73800F9D775 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B50466254F89C2F69D3894 /* Pods-Glood WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +672,7 @@
 		};
 		C0F37A1A2265F73800F9D775 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41E55E69A14037B64AFFBDD /* Pods-Glood WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -606,6 +733,7 @@
 		};
 		C0F37A212265F73800F9D775 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB3C6CFD4067CE64A7754CF /* Pods-Glood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Glood/Glood.entitlements;
@@ -625,6 +753,7 @@
 		};
 		C0F37A222265F73800F9D775 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBE6EE0ACCF3C5A940B64E4 /* Pods-Glood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Glood/Glood.entitlements;

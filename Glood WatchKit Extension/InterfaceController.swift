@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import RxSwift
 import Foundation
 import HealthKit
 
@@ -48,15 +49,16 @@ class InterfaceController: WKInterfaceController {
 
     private func loadList() {
         updateStatus(txt: "Loading ...", color: UIColor.white)
-        api.lastEntries({ data -> Void in
-            DispatchQueue.main.async {
-                self.errorLbl.setHidden(true)
-                self.updateTable(data)
-            }
-
-        }, { error -> Void in
-            self.updateStatus(txt: "\(error)", color: UIColor.red)
-        })
+        api.lastEntries()
+                .subscribeOn(MainScheduler.instance)
+                .subscribe(
+                        onSuccess: { json in
+                            self.errorLbl.setHidden(true)
+                            self.updateTable(json)
+                        },
+                        onError: { error in
+                            print("Error: ", error)
+                        })
     }
 
     func updateStatus(txt: String, color: UIColor) {
