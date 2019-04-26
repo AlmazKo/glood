@@ -49,11 +49,11 @@
                                         <tableRow identifier="Row" id="ySS-jX-w7W" customClass="Row" customModule="Glood_WatchKit_Extension">
                                             <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="scaleAspectFill" id="imC-P7-w8w">
                                                 <items>
-                                                    <label width="16" height="28" alignment="left" verticalAlignment="center" text="↗" textAlignment="center" id="Nf0-QZ-mwf"/>
-                                                    <label width="32" height="28" alignment="left" verticalAlignment="center" text="15.3" textAlignment="right" id="EWt-9a-ehz">
+                                                    <label width="20" height="28" alignment="left" verticalAlignment="center" text="💉" textAlignment="center" id="Nf0-QZ-mwf"/>
+                                                    <label width="32" height="28" alignment="left" verticalAlignment="center" text="0.12" textAlignment="right" id="EWt-9a-ehz">
                                                         <fontDescription key="font" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     </label>
-                                                    <label width="65" height="26" alignment="right" verticalAlignment="center" text="12:12 Apr 14" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.5" id="YF8-eZ-5zh">
+                                                    <label width="43" height="26" alignment="right" verticalAlignment="center" text="12:12" textAlignment="right" baselineAdjustment="alignCenters" minimumScaleFactor="0.5" id="YF8-eZ-5zh">
                                                         <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                                     </label>
                                                 </items>

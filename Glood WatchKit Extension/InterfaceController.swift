@@ -14,13 +14,7 @@ let ok = UIColor(red: 4 / 255, green: 222 / 225, blue: 113 / 225, alpha: 1)
 let warning = UIColor(red: 255 / 255, green: 230 / 225, blue: 32 / 225, alpha: 1)
 let danger = UIColor(red: 255 / 255, green: 59 / 225, blue: 48 / 225, alpha: 1)
 let wrongColor = UIColor(red: 194 / 255, green: 0 / 255, blue: 0 / 255, alpha: 1)
-
-public struct Rec {
-    let color: UIColor
-    let dt: Date
-    let value: Float
-    let direction: String
-}
+let treatmentSym = "💉"
 
 
 class InterfaceController: WKInterfaceController {
@@ -74,7 +68,7 @@ class InterfaceController: WKInterfaceController {
 
     func updateTable(_ data: [Entry]) {
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm MMM dd"
+        formatter.dateFormat = "HH:mm"
         tbl.setNumberOfRows(data.count, withRowType: "Row")
 
         for (i, e) in data.enumerated() {
@@ -90,6 +84,20 @@ class InterfaceController: WKInterfaceController {
 
                 row.time.setText(formatter.string(from: e.dt))
                 row.time.setTextColor(e.fontColor())
+            }
+        }
+    }
+
+    func updateTable(_ data: [Treatment]) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        tbl.setNumberOfRows(data.count, withRowType: "Row")
+
+        for (i, e) in data.enumerated() {
+            if let row = tbl.rowController(at: i) as? Row {
+                row.direction.setText(treatmentSym)
+                row.value.setText(String(format: "%.2f", arguments: [e.insulin]))
+                row.time.setText(formatter.string(from: e.dt))
             }
         }
     }
@@ -118,14 +126,11 @@ class InterfaceController: WKInterfaceController {
 
 extension Entry {
     func fontColor() -> UIColor {
-        let color: UIColor
-        if (value < 6) {
-            color = ok
-        } else if (value < 6.5) {
-            color = warning
-        } else {
-            color = danger
+
+        switch (value) {
+        case 4.5..<10: return ok;
+        case 4..<4.5, 10..<11: return warning;
+        default: return danger
         }
-        return color
     }
 }
