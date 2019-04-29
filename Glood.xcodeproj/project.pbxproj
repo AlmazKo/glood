@@ -25,6 +25,7 @@
 		C0F37A0F2265F73800F9D775 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A0E2265F73800F9D775 /* NotificationController.swift */; };
 		C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A102265F73800F9D775 /* ComplicationController.swift */; };
 		C0F37A132265F73800F9D775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F37A122265F73800F9D775 /* Assets.xcassets */; };
+		ED5DB0892277A416009B2683 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013302E2273456300E07150 /* Api.swift */; };
 		EDBD44422266836B009BECC7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBD44412266836B009BECC7 /* logo.png */; };
 		EDC61DAB22666C370069772E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC61DAA22666C370069772E /* logo.png */; };
 		EDDC1C6E22692D4E00E08AEA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */; };
@@ -143,12 +144,14 @@
 			children = (
 				C013302E2273456300E07150 /* Api.swift */,
 			);
-			path = Nightscout;
+			name = Nightscout;
+			path = "Glood WatchKit Extension/Nightscout";
 			sourceTree = "<group>";
 		};
 		C0F379DB2265F73700F9D775 = {
 			isa = PBXGroup;
 			children = (
+				C013302D2273454500E07150 /* Nightscout */,
 				C0F379E62265F73700F9D775 /* Glood */,
 				C0F379FA2265F73800F9D775 /* Glood WatchKit App */,
 				C0F37A092265F73800F9D775 /* Glood WatchKit Extension */,
@@ -198,7 +201,6 @@
 		C0F37A092265F73800F9D775 /* Glood WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C013302D2273454500E07150 /* Nightscout */,
 				C0F37A0A2265F73800F9D775 /* InterfaceController.swift */,
 				C0F37A0C2265F73800F9D775 /* ExtensionDelegate.swift */,
 				C0F37A0E2265F73800F9D775 /* NotificationController.swift */,
@@ -470,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5DB0892277A416009B2683 /* Api.swift in Sources */,
 				C0F379EA2265F73700F9D775 /* ViewController.swift in Sources */,
 				C0F379E82265F73700F9D775 /* AppDelegate.swift in Sources */,
 			);

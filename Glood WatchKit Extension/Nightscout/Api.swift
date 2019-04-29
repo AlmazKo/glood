@@ -22,6 +22,7 @@ public struct Entry {
 
 public struct Treatment {
     let dt: Date
+    let note: String
     let insulin: Float
     let carbs: Float
 }
@@ -48,45 +49,24 @@ public class Api {
     private let host = "https://mike2015.herokuapp.com"
     private let session = URLSession.shared
 
-//    public func lastEntries(_ handler: @escaping ([Entry]) -> Void, _ errorHandler: @escaping (Error) -> Void) {
-//
-//        makeRequest("/api/v1/entries/svg.json?count=50", { data -> Void in
-//            do {
-//                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [[String: Any]]
-//                let result = self.parseEntries(json: json)
-//                handler(result)
-//            } catch {
-//                errorHandler(ApiError.wrongResponse)
-//            }
-//
-//        }, errorHandler)
-//    }
-
     public func lastEntries() -> Single<[Entry]> {
 
         return makeRequest("/api/v1/entries/svg.json?count=50")
-                .map { json in
-                    self.parseEntries(json: json)
+                .map {
+                    self.parseEntries($0)
+                }
+    }
+
+    public func lastTreatments() -> Single<[Treatment]> {
+
+        return makeRequest("/api/v1/treatments.json?count=50")
+                .map {
+                   try self.parseTreatments($0)
                 }
     }
 
 
-//    public func lastTreatments(_ handler: @escaping ([Treatment]) -> Void, _ errorHandler: @escaping (Error) -> Void) {
-//
-//        makeRequest("/api/v1/treatments.json?count=50", { data -> Void in
-//            do {
-//                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [[String: Any]]
-//                let result = self.parseTreatments(json: json)
-//                handler(result)
-//            } catch {
-//                errorHandler(ApiError.wrongResponse)
-//            }
-//
-//        }, errorHandler)
-//    }
-
-
-    private func parseEntries(json: [[String: Any]]) -> [Entry] {
+    private func parseEntries(_ json: [[String: Any]]) -> [Entry] {
         var records = [Entry]()
 
         for r in json {
@@ -106,12 +86,17 @@ public class Api {
     }
 
 
-    private func parseTreatments(json: [[String: Any]]) -> [Treatment] {
+    private func parseTreatments(_ json: [[String: Any]]) -> [Treatment] {
         var records = [Treatment]()
 
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+
         for r in json {
+            let d =  r["created_at"] as! String
             let rec = Treatment(
-                    dt: Date(timeIntervalSince1970: r["timestamp"] as! Double / 1000),
+                    dt: dateFormatter.date(from: d)!,
+                    note: r["notes"] as? String ?? "",
                     insulin: r["insulin"] as? Float ?? 0,
                     carbs: r["carbs"] as? Float ?? 0
             )
@@ -127,7 +112,7 @@ public class Api {
         let url = URL(string: host + path)!
         let req = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
 
-        return Single< [[String: Any]]>.create { single in
+        return Single<[[String: Any]]>.create { single in
             let task = URLSession.shared.dataTask(with: req, completionHandler: { data, response, error in
                 if let error = error {
                     single(.error(error))

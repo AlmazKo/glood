@@ -50,7 +50,7 @@ class InterfaceController: WKInterfaceController {
     private func loadList() {
         updateStatus(txt: "Loading ...", color: UIColor.white)
         api.lastEntries()
-                .subscribeOn(MainScheduler.instance)
+                .observeOn(MainScheduler.instance)
                 .subscribe(
                         onSuccess: { json in
                             self.errorLbl.setHidden(true)
