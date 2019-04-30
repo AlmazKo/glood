@@ -60,7 +60,7 @@ class InterfaceController: WKInterfaceController {
         updateStatus(txt: "Loading ...", color: UIColor.white)
 
         Single.zip(api.lastEntries(), api.lastTreatments(), resultSelector: { (entries: [Entry], treatments: [Treatment]) -> [Record] in
-                    return merge(entries: entries, treatments: treatments)
+                    return self.merge(entries: entries, treatments: treatments)
                 })
                 .observeOn(MainScheduler.instance)
                 .subscribe(
@@ -73,7 +73,7 @@ class InterfaceController: WKInterfaceController {
                         })
     }
 
-    private func merge(entries: [Glood.Entry], treatments: [Glood.Treatment]) -> [Record] {
+    private func merge(entries: [Entry], treatments: [Treatment]) -> [Record] {
         var records = [Record]()
         entries.forEach { (e: Entry) in
             records.append(Record(
