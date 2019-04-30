@@ -50,7 +50,7 @@
                                             <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="scaleAspectFill" id="imC-P7-w8w">
                                                 <items>
                                                     <label width="20" height="28" alignment="left" verticalAlignment="center" text="💉" textAlignment="center" id="Nf0-QZ-mwf"/>
-                                                    <label width="32" height="28" alignment="left" verticalAlignment="center" text="0.12" textAlignment="right" id="EWt-9a-ehz">
+                                                    <label width="57" height="28" alignment="left" verticalAlignment="center" text="0.12" textAlignment="left" id="EWt-9a-ehz">
                                                         <fontDescription key="font" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                     </label>
                                                     <label width="43" height="26" alignment="right" verticalAlignment="center" text="12:12" textAlignment="right" baselineAdjustment="alignCenters" minimumScaleFactor="0.5" id="YF8-eZ-5zh">

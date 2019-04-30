@@ -12,11 +12,16 @@ public enum ApiError: Error {
     case outOfStock
 }
 
-
 public struct Entry {
     let dt: Date
     let value: Float
     let direction: Direction
+}
+
+public enum TreatmentType: Int {
+    case correctionBolus
+    case carbs
+    case unknown
 }
 
 
@@ -25,6 +30,7 @@ public struct Treatment {
     let note: String
     let insulin: Float
     let carbs: Float
+    let type: TreatmentType
 }
 
 public enum Direction: String, CaseIterable {
@@ -48,6 +54,11 @@ public enum Direction: String, CaseIterable {
 public class Api {
     private let host = "https://mike2015.herokuapp.com"
     private let session = URLSession.shared
+    private let dateFormatter = DateFormatter()
+
+    init() {
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    }
 
     public func lastEntries() -> Single<[Entry]> {
 
@@ -61,10 +72,9 @@ public class Api {
 
         return makeRequest("/api/v1/treatments.json?count=50")
                 .map {
-                   try self.parseTreatments($0)
+                    self.parseTreatments($0)
                 }
     }
-
 
     private func parseEntries(_ json: [[String: Any]]) -> [Entry] {
         var records = [Entry]()
@@ -89,16 +99,35 @@ public class Api {
     private func parseTreatments(_ json: [[String: Any]]) -> [Treatment] {
         var records = [Treatment]()
 
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
 
         for r in json {
-            let d =  r["created_at"] as! String
+            guard let dt = dateFormatter.date(from: r["created_at"] as! String) else {
+                continue
+            }
+
+            let eventType = r["eventType"] as? String ?? ""
+            let type: TreatmentType
+            let insulin = r["insulin"] as? Float ?? 0
+            let carbs = r["carbs"] as? Float ?? 0
+
+            if (eventType == "Correction Bolus" && insulin > 0) {
+                type = .correctionBolus
+            } else if(carbs > 0){
+                type = .carbs
+            } else {
+                type = .unknown
+            }
+
+            if (type == .unknown) {
+                continue
+            }
+
             let rec = Treatment(
-                    dt: dateFormatter.date(from: d)!,
+                    dt: dt,
                     note: r["notes"] as? String ?? "",
-                    insulin: r["insulin"] as? Float ?? 0,
-                    carbs: r["carbs"] as? Float ?? 0
+                    insulin: insulin,
+                    carbs: carbs,
+                    type: type
             )
             records.append(rec)
         }
@@ -142,22 +171,5 @@ public class Api {
                 task.cancel()
             }
         }
-
-
-//
-//
-//        session.dataTask(with: req, completionHandler: { (data, response, error) -> Void in
-//            if (data != nil) {
-//                let res = response as! HTTPURLResponse
-//                if (res.statusCode == 200) {
-//                    handler(data!)
-//                } else {
-//                    errorHandler(ApiError.wrongResponse)
-//                }
-//            } else {
-//                errorHandler(error ?? ApiError.unknownError)
-//            }
-//
-//        }).resume()
     }
 }
