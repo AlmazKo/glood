@@ -69,7 +69,7 @@ class InterfaceController: WKInterfaceController {
                 self.updateTable(json)
             },
             onError: { error in
-                print("Error: ", error)
+                self.errorLbl.setText(error.localizedDescription)
             })
     }
     

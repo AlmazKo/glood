@@ -25,6 +25,7 @@
 		C0F37A0F2265F73800F9D775 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A0E2265F73800F9D775 /* NotificationController.swift */; };
 		C0F37A112265F73800F9D775 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F37A102265F73800F9D775 /* ComplicationController.swift */; };
 		C0F37A132265F73800F9D775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F37A122265F73800F9D775 /* Assets.xcassets */; };
+		ED1FC0B12522EEDE00F1B774 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1FC0B02522EEDE00F1B774 /* logo.png */; };
 		ED5DB0892277A416009B2683 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013302E2273456300E07150 /* Api.swift */; };
 		EDBD44422266836B009BECC7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBD44412266836B009BECC7 /* logo.png */; };
 		EDC61DAB22666C370069772E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC61DAA22666C370069772E /* logo.png */; };
@@ -104,6 +105,7 @@
 		C0F37A122265F73800F9D775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F37A142265F73800F9D775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0F37A152265F73800F9D775 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		ED1FC0B02522EEDE00F1B774 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		EDBD44412266836B009BECC7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		EDC61DAA22666C370069772E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		EDDC1C6D22692D4E00E08AEA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		C0F379E62265F73700F9D775 /* Glood */ = {
 			isa = PBXGroup;
 			children = (
+				ED1FC0B02522EEDE00F1B774 /* logo.png */,
 				EDDC1C72226A6AB600E08AEA /* Glood.entitlements */,
 				C0F379E72265F73700F9D775 /* AppDelegate.swift */,
 				C0F379E92265F73700F9D775 /* ViewController.swift */,
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F379F22265F73800F9D775 /* LaunchScreen.storyboard in Resources */,
+				ED1FC0B12522EEDE00F1B774 /* logo.png in Resources */,
 				C0F379EF2265F73800F9D775 /* Assets.xcassets in Resources */,
 				C0F379ED2265F73700F9D775 /* Main.storyboard in Resources */,
 				BBFDBDE84DF3DBD4A5E06B68 /* .gitignore in Resources */,

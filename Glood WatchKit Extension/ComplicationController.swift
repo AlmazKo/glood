@@ -27,6 +27,22 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         dateFormatter.dateFormat = "mm"
     }
     
+    func getAlwaysOnTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
+        switch complication.family {
+        
+        case .modularSmall:
+            let tpl = CLKComplicationTemplateModularSmallRingText()
+            tpl.textProvider = CLKSimpleTextProvider(text: "1")
+            tpl.fillFraction = 0.9
+            tpl.tintColor = .blue
+            tpl.ringStyle = .closed
+            handler(tpl)
+            
+        default:
+            handler(nil)
+        }
+    }
+    
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         
         switch complication.family {
@@ -35,27 +51,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let tpl = CLKComplicationTemplateModularSmallRingText()
             tpl.textProvider = CLKSimpleTextProvider(text: "4")
             tpl.fillFraction = 0.75
-            tpl.tintColor = .blue
-            tpl.ringStyle = .open
+            tpl.tintColor = .green
+            tpl.ringStyle = .closed
             let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: tpl)
             handler(entry)
             
-//        case .graphicCorner:
-//            let tpl = CLKComplicationTemplateGraphicCornerGaugeText()
-//            tpl.leadingTextProvider = CLKSimpleTextProvider(text: "5", shortText: "55", accessibilityLabel: "!")
-//            tpl.outerTextProvider = CLKSimpleTextProvider(text: "10", shortText: "55", accessibilityLabel: "!")
-//            tpl.gaugeProvider = CLKSimpleGaugeProvider(style: .fill, gaugeColors: [UIColor.red, UIColor.green, UIColor.red], gaugeColorLocations: nil, fillFraction: 0.4)
-//            let entry = CLKComplicationTimelineEntry(date: record.dt, complicationTemplate: tpl)
-//            handler(entry)
-//
-//        case .graphicCircular:
-//            let tpl = CLKComplicationTemplateGraphicCircularOpenGaugeSimpleText()
-//            tpl.centerTextProvider = CLKSimpleTextProvider(text: "5", shortText: "55", accessibilityLabel: "!")
-//            tpl.bottomTextProvider = CLKSimpleTextProvider(text: "10", shortText: "55", accessibilityLabel: "!")
-//            tpl.gaugeProvider = CLKSimpleGaugeProvider(style: .fill, gaugeColors: [UIColor.red, UIColor.green, UIColor.red], gaugeColorLocations: nil, fillFraction: 0.4)
-//
-//            let entry = CLKComplicationTimelineEntry(date: record.dt, complicationTemplate: tpl)
-//            handler(entry)
         default:
             handler(nil)
         }
@@ -77,23 +77,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             tpl.fillFraction = 0.3
             tpl.ringStyle = .closed
             tpl.tintColor = .green
-            
             return tpl
-            
-//        case .graphicCorner:
-//            let tpl = CLKComplicationTemplateGraphicCornerGaugeText()
-//            tpl.leadingTextProvider = CLKSimpleTextProvider(text: "5", shortText: "55", accessibilityLabel: "!")
-//            tpl.outerTextProvider = CLKSimpleTextProvider(text: "10", shortText: "55", accessibilityLabel: "!")
-//            tpl.gaugeProvider = CLKSimpleGaugeProvider(style: .fill, gaugeColors: [UIColor.red, UIColor.green, UIColor.red], gaugeColorLocations: nil, fillFraction: 0.4)
-//            return tpl
-//
-//        case .graphicCircular:
-//            let tpl = CLKComplicationTemplateGraphicCircularOpenGaugeSimpleText()
-//            tpl.centerTextProvider = CLKSimpleTextProvider(text: "5")
-//            tpl.bottomTextProvider = CLKSimpleTextProvider(text: ":56")
-//            tpl.gaugeProvider = CLKSimpleGaugeProvider(style: .fill, gaugeColors: [UIColor.red, UIColor.green, UIColor.red], gaugeColorLocations:  nil, fillFraction: 0.4)
-//
-//            return tpl
             
         default:
             return nil
