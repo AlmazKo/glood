@@ -14,29 +14,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="MnU-s5-VL6">
-            <objects>
-                <controller id="Z2X-Yv-t0d">
-                    <items>
-                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="hJ4-td-2o1">
-                            <items>
-                                <button width="58" alignment="left" title="💉" id="B3E-ES-aNz">
-                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
-                                </button>
-                                <button width="52" height="1" alignment="left" verticalAlignment="center" title="🍌" id="1TT-f3-NmS">
-                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
-                                </button>
-                            </items>
-                        </group>
-                        <button width="58" alignment="left" title="📈" id="Ond-ml-Mb7">
-                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
-                        </button>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="209" y="345"/>
-        </scene>
         <!--History-->
         <scene sceneID="aou-V4-d1y">
             <objects>
